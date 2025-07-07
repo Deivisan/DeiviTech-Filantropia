@@ -7,6 +7,7 @@
 Site institucional focado em projetos sociais, parcerias com ONGs e ações de responsabilidade social da DeiviTech.
 
 **🎯 Objetivos:**
+
 - Promover projetos de inclusão digital
 - Apoiar ONGs e instituições beneficentes
 - Divulgar ações sociais da empresa
@@ -20,8 +21,11 @@ Site institucional focado em projetos sociais, parcerias com ONGs e ações de r
 
 ## 🌐 Acesso
 
-**Site:** https://deivisan.github.io/DeiviTech-Filantropia/
+**Site:** [https://deivisan.github.io/DeiviTech-Filantropia/](https://deivisan.github.io/DeiviTech-Filantropia/)
 
 ---
 
-*Desenvolvido com ❤️ pela DeiviTech - Tecnologia com Propósito Social*
+## 💙 Desenvolvido com ❤️ pela DeiviTech
+
+Tecnologia com Propósito Social
+
