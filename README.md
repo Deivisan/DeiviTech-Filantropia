@@ -107,6 +107,9 @@ Site institucional focado em projetos sociais, parcerias com ONGs e ações de r
 - **Instituto Ayrton Senna** - Educação tecnológica para jovens
 - **Code.org** - Ensino global de programação
 - **Black Girls Code** - Capacitação para meninas negras
+- **All Star Code** - Ciência da computação para jovens negros
+- **Black Professionals in Tech** - Rede de profissionais negros em tecnologia
+- **Data 4 Black Lives** - Ciência de dados para impacto social na comunidade negra
 
 ---
 
