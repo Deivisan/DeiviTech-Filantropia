@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parcerias - Filantropia DeiviTech</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <style>
+      .hero-bg {
+        background: linear-gradient(
+          135deg,
+          #059669 0%,
+          #10b981 50%,
+          #34d399 100%
+        );
+      }
+      .partner-card {
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+      }
+      .partner-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.25);
+      }
+      .gradient-text {
+        background: linear-gradient(45deg, #10b981, #34d399, #6ee7b7);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .impact-metric {
+        background: linear-gradient(45deg, rgba(16, 185, 129, 0.1), rgba(52, 211, 153, 0.1));
+        border: 1px solid rgba(16, 185, 129, 0.3);
+        border-radius: 12px;
+        padding: 1.5rem;
+        margin: 1rem 0;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="bg-gray-800 shadow-lg">
+      <div class="container mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+          <a href="index.html" class="text-2xl font-bold gradient-text">Filantropia DeiviTech</a>
+          <div class="space-x-6">
+            <a href="index.html" class="hover:text-green-400 transition-colors">Início</a>
+            <a href="projetos.html" class="hover:text-green-400 transition-colors">Projetos</a>
+            <a href="tutoriais.html" class="hover:text-green-400 transition-colors">Tutoriais</a>
+            <a href="parcerias.html" class="text-green-400 border-b-2 border-green-400">Parcerias</a>
+            <a href="comunidade.html" class="hover:text-green-400 transition-colors">Comunidade</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="hero-bg py-16 relative overflow-hidden">
+      <div class="absolute inset-0 bg-black opacity-20"></div>
+      <div class="container mx-auto px-6 relative z-10 text-center">
+        <h1 class="text-5xl font-bold mb-4">
+          <span class="text-white">Parcerias</span>
+          <span class="gradient-text">Estratégicas</span>
+        </h1>
+        <p class="text-2xl mb-8 opacity-90">
+          Juntos construindo um futuro mais inclusivo na tecnologia
+        </p>
+      </div>
+    </header>
+
+    <!-- Impact Section -->
+    <section class="py-16 bg-gray-800">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold mb-6">🌟 Nosso Impacto Coletivo</h2>
+          <p class="text-xl text-gray-300 max-w-4xl mx-auto">
+            Através de parcerias estratégicas, amplificamos nosso alcance e criamos
+            oportunidades reais para comunidades sub-representadas na tecnologia.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="impact-metric text-center">
+            <div class="text-4xl font-bold text-green-400 mb-2">6+</div>
+            <div class="text-lg font-semibold mb-2">ONGs Parceiras</div>
+            <div class="text-gray-300 text-sm">
+              Organizações dedicadas à inclusão digital e diversidade tech
+            </div>
+          </div>
+
+          <div class="impact-metric text-center">
+            <div class="text-4xl font-bold text-blue-400 mb-2">10K+</div>
+            <div class="text-lg font-semibold mb-2">Pessoas Impactadas</div>
+            <div class="text-gray-300 text-sm">
+              Alunos, profissionais e comunidades beneficiadas coletivamente
+            </div>
+          </div>
+
+          <div class="impact-metric text-center">
+            <div class="text-4xl font-bold text-purple-400 mb-2">∞</div>
+            <div class="text-lg font-semibold mb-2">Potencial de Crescimento</div>
+            <div class="text-gray-300 text-sm">
+              Cada parceria abre portas para novas possibilidades
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="py-16">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold mb-6">🤝 Nossas Parcerias</h2>
+          <p class="text-xl text-gray-300 max-w-4xl mx-auto">
+            Trabalhamos lado a lado com organizações que compartilham nossa visão
+            de um mundo mais inclusivo e acessível através da tecnologia.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <!-- Black Girls Code -->
+          <div class="partner-card bg-gray-800 p-8 rounded-xl">
+            <div class="flex items-center mb-6">
+              <div class="w-16 h-16 bg-pink-500 rounded-full flex items-center justify-center mr-4">
+                <i class="fas fa-code text-2xl text-white"></i>
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold">Black Girls Code</h3>
+                <p class="text-gray-300">Empoderando meninas negras através da tecnologia</p>
+              </div>
+            </div>
+
+            <p class="text-gray-300 mb-6">
+              A Black Girls Code é uma organização global que trabalha para aumentar a representação
+              de mulheres negras na indústria de tecnologia, oferecendo programas gratuitos de
+              codificação e mentoria.
+            </p>
+
+            <div class="bg-pink-900 p-4 rounded mb-6">
+              <h4 class="font-bold mb-2">🎯 Colaboração:</h4>
+              <ul class="text-sm space-y-1">
+                <li>✅ Compartilhamento de currículos e materiais educacionais</li>
+                <li>✅ Participação em eventos e workshops conjuntos</li>
+                <li>✅ Mentoria técnica para alunas do programa</li>
+                <li>✅ Desenvolvimento de projetos colaborativos</li>
+              </ul>
+            </div>
+
+            <div class="flex space-x-3">
+              <a
+                href="https://www.blackgirlscode.com/"
+                target="_blank"
+                class="flex-1 bg-pink-500 hover:bg-pink-600 py-3 rounded-lg font-bold text-center transition-all"
+              >
+                <i class="fas fa-external-link-alt mr-2"></i>Visitar Site
+              </a>
+              <a
+                href="mailto:info@blackgirlscode.com"
+                class="flex-1 bg-gray-600 hover:bg-gray-700 py-3 rounded-lg font-bold text-center transition-all"
+              >
+                <i class="fas fa-envelope mr-2"></i>Contato
+              </a>
+            </div>
+          </div>
+
+          <!-- All Star Code -->
+          <div class="partner-card bg-gray-800 p-8 rounded-xl">
+            <div class="flex items-center mb-6">
+              <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mr-4">
+                <i class="fas fa-star text-2xl text-white"></i>
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold">All Star Code</h3>
+                <p class="text-gray-300">Desenvolvendo o próximo bilhão de codificadores</p>
+              </div>
+            </div>
+
+            <p class="text-gray-300 mb-6">
+              A All Star Code oferece educação gratuita em codificação para jovens de comunidades
+              sub-representadas, com foco especial em jovens negros e latinos nos Estados Unidos.
+            </p>
+
+            <div class="bg-blue-900 p-4 rounded mb-6">
+              <h4 class="font-bold mb-2">🎯 Colaboração:</h4>
+              <ul class="text-sm space-y-1">
+                <li>✅ Tradução e adaptação de materiais para português</li>
+                <li>✅ Compartilhamento de metodologias de ensino</li>
+                <li>✅ Participação em programas de intercâmbio educacional</li>
+                <li>✅ Desenvolvimento de ferramentas educacionais conjuntas</li>
+              </ul>
+            </div>
+
+            <div class="flex space-x-3">
+              <a
+                href="https://www.allstarcode.org/"
+                target="_blank"
+                class="flex-1 bg-blue-500 hover:bg-blue-600 py-3 rounded-lg font-bold text-center transition-all"
+              >
+                <i class="fas fa-external-link-alt mr-2"></i>Visitar Site
+              </a>
+              <a
+                href="mailto:info@allstarcode.org"
+                class="flex-1 bg-gray-600 hover:bg-gray-700 py-3 rounded-lg font-bold text-center transition-all"
+              >
+                <i class="fas fa-envelope mr-2"></i>Contato
+              </a>
+            </div>
+          </div>
+
+          <!-- Black Professionals in Tech -->
+          <div class="partner-card bg-gray-800 p-8 rounded-xl">
+            <div class="flex items-center mb-6">
+              <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mr-4">
+                <i class="fas fa-users text-2xl text-white"></i>
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold">Black Professionals in Tech</h3>
+                <p class="text-gray-300">Construindo uma comunidade de profissionais negros na tech</p>
+              </div>
+            </div>
+
+            <p class="text-gray-300 mb-6">
+              Uma comunidade global que conecta profissionais negros na indústria de tecnologia,
+              oferecendo networking, mentoria e oportunidades de desenvolvimento profissional.
+            </p>
+
+            <div class="bg-green-900 p-4 rounded mb-6">
+              <h4 class="font-bold mb-2">🎯 Colaboração:</h4>
+              <ul class="text-sm space-y-1">
+                <li>✅ Participação em eventos e conferências</li>
+                <li>✅ Programas de mentoria técnica</li>
+                <li>✅ Compartilhamento de oportunidades de emprego</li>
+                <li>✅ Desenvolvimento de conteúdo educacional conjunto</li>
+              </ul>
+            </div>
+
+            <div class="flex space-x-3">
+              <a
+                href="https://www.blackprofessionalsintech.com/"
+                target="_blank"
+                class="flex-1 bg-green-500 hover:bg-green-600 py-3 rounded-lg font-bold text-center transition-all"
+              >
+                <i class="fas fa-external-link-alt mr-2"></i>Visitar Site
+              </a>
+              <a
+                href="mailto:info@blackprofessionalsintech.com"
+                class="flex-1 bg-gray-600 hover:bg-gray-700 py-3 rounded-lg font-bold text-center transition-all"
+              >
+                <i class="fas fa-envelope mr-2"></i>Contato
+              </a>
+            </div>
+          </div>
+
+          <!-- Data 4 Black Lives -->
+          <div class="partner-card bg-gray-800 p-8 rounded-xl">
+            <div class="flex items-center mb-6">
+              <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mr-4">
+                <i class="fas fa-database text-2xl text-white"></i>
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold">Data 4 Black Lives</h3>
+                <p class="text-gray-300">Usando dados para combater injustiças raciais</p>
+              </div>
+            </div>
+
+            <p class="text-gray-300 mb-6">
+              Uma organização que capacita comunidades negras com ferramentas de dados e análise
+              para combater injustiças sistêmicas e promover mudanças sociais positivas.
+            </p>
+
+            <div class="bg-purple-900 p-4 rounded mb-6">
+              <h4 class="font-bold mb-2">🎯 Colaboração:</h4>
+              <ul class="text-sm space-y-1">
+                <li>✅ Desenvolvimento de ferramentas de análise de dados</li>
+                <li>✅ Workshops sobre dados e justiça social</li>
+                <li>✅ Projetos de visualização de dados educacionais</li>
+                <li>✅ Pesquisa colaborativa sobre inclusão digital</li>
+              </ul>
+            </div>
+
+            <div class="flex space-x-3">
+              <a
+                href="https://d4bl.org/"
+                target="_blank"
+                class="flex-1 bg-purple-500 hover:bg-purple-600 py-3 rounded-lg font-bold text-center transition-all"
+              >
+                <i class="fas fa-external-link-alt mr-2"></i>Visitar Site
+              </a>
+              <a
+                href="mailto:info@d4bl.org"
+                class="flex-1 bg-gray-600 hover:bg-gray-700 py-3 rounded-lg font-bold text-center transition-all"
+              >
+                <i class="fas fa-envelope mr-2"></i>Contato
+              </a>
+            </div>
+          </div>
+
+          <!-- Laboratoria -->
+          <div class="partner-card bg-gray-800 p-8 rounded-xl">
+            <div class="flex items-center mb-6">
+              <div class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mr-4">
+                <i class="fas fa-graduation-cap text-2xl text-white"></i>
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold">Laboratoria</h3>
+                <p class="text-gray-300">Transformando vidas através da educação digital</p>
+              </div>
+            </div>
+
+            <p class="text-gray-300 mb-6">
+              A Laboratoria capacita mulheres jovens de baixa renda na América Latina com habilidades
+              digitais, oferecendo formação intensiva em desenvolvimento web e inserção no mercado de trabalho.
+            </p>
+
+            <div class="bg-orange-900 p-4 rounded mb-6">
+              <h4 class="font-bold mb-2">🎯 Colaboração:</h4>
+              <ul class="text-sm space-y-1">
+                <li>✅ Adaptação de currículos para o mercado brasileiro</li>
+                <li>✅ Programas de formação conjunta</li>
+                <li>✅ Compartilhamento de metodologias de ensino</li>
+                <li>✅ Desenvolvimento de projetos sociais colaborativos</li>
+              </ul>
+            </div>
+
+            <div class="flex space-x-3">
+              <a
+                href="https://www.laboratoria.la/"
+                target="_blank"
+                class="flex-1 bg-orange-500 hover:bg-orange-600 py-3 rounded-lg font-bold text-center transition-all"
+              >
+                <i class="fas fa-external-link-alt mr-2"></i>Visitar Site
+              </a>
+              <a
+                href="mailto:contacto@laboratoria.la"
+                class="flex-1 bg-gray-600 hover:bg-gray-700 py-3 rounded-lg font-bold text-center transition-all"
+              >
+                <i class="fas fa-envelope mr-2"></i>Contato
+              </a>
+            </div>
+          </div>
+
+          <!-- Girls Who Code -->
+          <div class="partner-card bg-gray-800 p-8 rounded-xl">
+            <div class="flex items-center mb-6">
+              <div class="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center mr-4">
+                <i class="fas fa-code-branch text-2xl text-white"></i>
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold">Girls Who Code</h3>
+                <p class="text-gray-300">Inspirando e educando meninas na computação</p>
+              </div>
+            </div>
+
+            <p class="text-gray-300 mb-6">
+              A Girls Who Code trabalha para fechar a lacuna de gênero na tecnologia,
+              oferecendo programas gratuitos de codificação para meninas do ensino médio.
+            </p>
+
+            <div class="bg-red-900 p-4 rounded mb-6">
+              <h4 class="font-bold mb-2">🎯 Colaboração:</h4>
+              <ul class="text-sm space-y-1">
+                <li>✅ Participação em programas de verão</li>
+                <li>✅ Desenvolvimento de currículos educacionais</li>
+                <li>✅ Mentoria técnica para alunas</li>
+                <li>✅ Eventos de conscientização sobre carreiras em tech</li>
+              </ul>
+            </div>
+
+            <div class="flex space-x-3">
+              <a
+                href="https://girlswhocode.com/"
+                target="_blank"
+                class="flex-1 bg-red-500 hover:bg-red-600 py-3 rounded-lg font-bold text-center transition-all"
+              >
+                <i class="fas fa-external-link-alt mr-2"></i>Visitar Site
+              </a>
+              <a
+                href="mailto:info@girlswhocode.com"
+                class="flex-1 bg-gray-600 hover:bg-gray-700 py-3 rounded-lg font-bold text-center transition-all"
+              >
+                <i class="fas fa-envelope mr-2"></i>Contato
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="text-center mt-16 bg-gradient-to-r from-green-600 to-blue-600 p-8 rounded-xl">
+          <h3 class="text-3xl font-bold mb-4">🤝 Interessado em Parceria?</h3>
+          <p class="text-xl mb-6">
+            Se sua organização trabalha com inclusão digital e diversidade na tecnologia,
+            vamos conversar sobre como podemos colaborar!
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="mailto:deivison.santana@example.com?subject=Proposta de Parceria - Filantropia DeiviTech"
+               class="bg-white text-gray-900 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-all">
+              <i class="fas fa-handshake mr-2"></i>Propor Parceria
+            </a>
+            <a href="comunidade.html" class="bg-gray-800 text-white px-8 py-3 rounded-lg font-bold hover:bg-gray-700 transition-all">
+              <i class="fas fa-users mr-2"></i>Ver Comunidade
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-8 border-t border-gray-700">
+      <div class="container mx-auto px-6 text-center">
+        <div class="mb-6">
+          <h3 class="text-xl font-bold mb-4">Filantropia DeiviTech</h3>
+          <p class="text-gray-400 max-w-2xl mx-auto">
+            Acreditamos que parcerias estratégicas são essenciais para criar
+            um impacto duradouro e inclusivo na comunidade tecnológica.
+          </p>
+        </div>
+
+        <div class="flex justify-center space-x-6 mb-6">
+          <a
+            href="https://github.com/deivisan"
+            target="_blank"
+            class="text-gray-400 hover:text-white"
+          >
+            <i class="fab fa-github text-xl"></i>
+          </a>
+          <a
+            href="https://linkedin.com/in/deivison-santana"
+            target="_blank"
+            class="text-gray-400 hover:text-white"
+          >
+            <i class="fab fa-linkedin text-xl"></i>
+          </a>
+          <a
+            href="https://wa.me/5575981231019"
+            target="_blank"
+            class="text-gray-400 hover:text-white"
+          >
+            <i class="fab fa-whatsapp text-xl"></i>
+          </a>
+        </div>
+
+        <div class="text-gray-400">
+          <p>
+            &copy; 2025 Filantropia DeiviTech. Conhecimento livre para todos.
+          </p>
+          <p class="mt-2">
+            Feito com ❤️ para a comunidade •
+            <a
+              href="https://deivisan.github.io/FreelancerDeiviTech/"
+              class="text-green-400 hover:text-green-300"
+              target="_blank"
+              >Serviços Comerciais</a
+            >
+          </p>
+          <div class="mt-4 flex justify-center">
+            <a href="https://wa.me/5575981231019?text=Olá! Gostaria de apoiar a Filantropia DeiviTech com uma doação voluntária 💙" target="_blank"
+               class="bg-green-600 hover:bg-green-700 px-6 py-2 rounded-lg font-bold text-sm transition-all flex items-center">
+              <i class="fas fa-heart mr-2"></i>Apoie o Projeto (Voluntário)
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

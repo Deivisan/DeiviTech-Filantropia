@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projetos Open Source - Filantropia DeiviTech</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <style>
+      .hero-bg {
+        background: linear-gradient(
+          135deg,
+          #059669 0%,
+          #10b981 50%,
+          #34d399 100%
+        );
+      }
+      .service-card {
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+      }
+      .service-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.25);
+      }
+      .gradient-text {
+        background: linear-gradient(45deg, #10b981, #34d399, #6ee7b7);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .project-showcase {
+        position: relative;
+        overflow: hidden;
+        border-radius: 12px;
+      }
+      .project-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          45deg,
+          rgba(16, 185, 129, 0.9),
+          rgba(52, 211, 153, 0.9)
+        );
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .project-showcase:hover .project-overlay {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="bg-gray-800 shadow-lg">
+      <div class="container mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+          <a href="index.html" class="text-2xl font-bold gradient-text">Filantropia DeiviTech</a>
+          <div class="space-x-6">
+            <a href="index.html" class="hover:text-green-400 transition-colors">Início</a>
+            <a href="projetos.html" class="text-green-400 border-b-2 border-green-400">Projetos</a>
+            <a href="tutoriais.html" class="hover:text-green-400 transition-colors">Tutoriais</a>
+            <a href="parcerias.html" class="hover:text-green-400 transition-colors">Parcerias</a>
+            <a href="comunidade.html" class="hover:text-green-400 transition-colors">Comunidade</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="hero-bg py-16 relative overflow-hidden">
+      <div class="absolute inset-0 bg-black opacity-20"></div>
+      <div class="container mx-auto px-6 relative z-10 text-center">
+        <h1 class="text-5xl font-bold mb-4">
+          <span class="text-white">Projetos</span>
+          <span class="gradient-text">Open Source</span>
+        </h1>
+        <p class="text-2xl mb-8 opacity-90">
+          Conhecimento compartilhado, código liberado para todos
+        </p>
+      </div>
+    </header>
+
+    <!-- Projects Section -->
+    <section class="py-16">
+      <div class="container mx-auto px-6">
+        <p class="text-xl text-gray-300 text-center mb-12 max-w-4xl mx-auto">
+          Todos os meus repositórios públicos estão disponíveis gratuitamente para estudo, uso e contribuição.
+          Cada projeto representa conhecimento compartilhado e soluções práticas para problemas reais.
+        </p>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+          <!-- DeiviTech Formatação -->
+          <div class="service-card bg-gray-800 p-8 rounded-xl">
+            <div
+              class="project-showcase h-48 bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center mb-6 relative"
+            >
+              <i class="fas fa-desktop text-6xl text-white"></i>
+              <div class="project-overlay">
+                <div class="text-center">
+                  <i class="fas fa-external-link-alt text-3xl text-white mb-2"></i>
+                  <p class="text-white font-bold">Ver Demonstração</p>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="text-2xl font-bold mb-4">🖥️ DeiviTech Formatação</h3>
+            <p class="text-gray-300 mb-4">
+              Site completo para negócio de formatação com carrinho inteligente,
+              análise IA e sistema de combos.
+            </p>
+
+            <div class="bg-green-900 p-4 rounded mb-4">
+              <h4 class="font-bold mb-2">📚 O que você aprende:</h4>
+              <ul class="text-sm space-y-1">
+                <li>✅ HTML5, CSS3 e JavaScript avançado</li>
+                <li>✅ Sistema de carrinho dinâmico</li>
+                <li>✅ Integração com WhatsApp API</li>
+                <li>✅ Design responsivo moderno</li>
+                <li>✅ Análise de dados com IA</li>
+              </ul>
+            </div>
+
+            <div class="flex space-x-3">
+              <a
+                href="https://deivisan.github.io/DeiviTech-Formatacao/"
+                target="_blank"
+                class="flex-1 bg-blue-500 hover:bg-blue-600 py-3 rounded-lg font-bold text-center transition-all"
+              >
+                <i class="fas fa-eye mr-2"></i>Ver Demo
+              </a>
+              <a
+                href="https://github.com/deivisan/DeiviTech-Formatacao"
+                target="_blank"
+                class="flex-1 bg-gray-600 hover:bg-gray-700 py-3 rounded-lg font-bold text-center transition-all"
+              >
+                <i class="fab fa-github mr-2"></i>Código
+              </a>
+            </div>
+          </div>
+
+          <!-- Monte Seu Notebook -->
+          <div class="service-card bg-gray-800 p-8 rounded-xl">
+            <div
+              class="project-showcase h-48 bg-gradient-to-r from-green-500 to-blue-600 flex items-center justify-center mb-6 relative"
+            >
+              <i class="fas fa-laptop text-6xl text-white"></i>
+              <div class="project-overlay">
+                <div class="text-center">
+                  <i class="fas fa-external-link-alt text-3xl text-white mb-2"></i>
+                  <p class="text-white font-bold">Ver Demonstração</p>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="text-2xl font-bold mb-4">💻 Configurador de Notebook</h3>
+            <p class="text-gray-300 mb-4">
+              Sistema interativo para personalização de notebooks com
+              calculadora em tempo real e comparação de preços.
+            </p>
+
+            <div class="bg-green-900 p-4 rounded mb-4">
+              <h4 class="font-bold mb-2">📚 O que você aprende:</h4>
+              <ul class="text-sm space-y-1">
+                <li>✅ JavaScript modular e orientado a objetos</li>
+                <li>✅ Manipulação dinâmica do DOM</li>
+                <li>✅ Sistemas de configuração complexos</li>
+                <li>✅ Calculadoras interativas</li>
+                <li>✅ UX/UI para e-commerce</li>
+              </ul>
+            </div>
+
+            <div class="flex space-x-3">
+              <a
+                href="https://deivisan.github.io/DeiviTech-Monte-Seu-Notebook/"
+                target="_blank"
+                class="flex-1 bg-blue-500 hover:bg-blue-600 py-3 rounded-lg font-bold text-center transition-all"
+              >
+                <i class="fas fa-eye mr-2"></i>Ver Demo
+              </a>
+              <a
+                href="https://github.com/deivisan/DeiviTech-Monte-Seu-Notebook"
+                target="_blank"
+                class="flex-1 bg-gray-600 hover:bg-gray-700 py-3 rounded-lg font-bold text-center transition-all"
+              >
+                <i class="fab fa-github mr-2"></i>Código
+              </a>
+            </div>
+          </div>
+
+          <!-- Automation Scripts -->
+          <div class="service-card bg-gray-800 p-8 rounded-xl">
+            <div
+              class="project-showcase h-48 bg-gradient-to-r from-purple-500 to-pink-600 flex items-center justify-center mb-6 relative"
+            >
+              <i class="fas fa-robot text-6xl text-white"></i>
+              <div class="project-overlay">
+                <div class="text-center">
+                  <i class="fas fa-external-link-alt text-3xl text-white mb-2"></i>
+                  <p class="text-white font-bold">Ver Repositório</p>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="text-2xl font-bold mb-4">🤖 Scripts de Automação</h3>
+            <p class="text-gray-300 mb-4">
+              Coleção de automações Python para produtividade, organização de
+              arquivos e tarefas repetitivas.
+            </p>
+
+            <div class="bg-green-900 p-4 rounded mb-4">
+              <h4 class="font-bold mb-2">📚 O que você aprende:</h4>
+              <ul class="text-sm space-y-1">
+                <li>✅ Python para automação</li>
+                <li>✅ Manipulação de arquivos e pastas</li>
+                <li>✅ Web scraping e APIs</li>
+                <li>✅ Relatórios automáticos</li>
+                <li>✅ Agendamento de tarefas</li>
+              </ul>
+            </div>
+
+            <div class="flex space-x-3">
+              <a
+                href="https://github.com/deivisan/automation-scripts"
+                target="_blank"
+                class="flex-1 bg-purple-500 hover:bg-purple-600 py-3 rounded-lg font-bold text-center transition-all"
+              >
+                <i class="fab fa-github mr-2"></i>Repositório
+              </a>
+              <a
+                href="tutoriais.html#tutorial-python"
+                class="flex-1 bg-gray-600 hover:bg-gray-700 py-3 rounded-lg font-bold text-center transition-all"
+              >
+                <i class="fas fa-book mr-2"></i>Tutorial
+              </a>
+            </div>
+          </div>
+
+          <!-- Currículo Digital -->
+          <div class="service-card bg-gray-800 p-8 rounded-xl">
+            <div
+              class="project-showcase h-48 bg-gradient-to-r from-indigo-500 to-cyan-500 flex items-center justify-center mb-6 relative"
+            >
+              <i class="fas fa-user-tie text-6xl text-white"></i>
+              <div class="project-overlay">
+                <div class="text-center">
+                  <i class="fas fa-external-link-alt text-3xl text-white mb-2"></i>
+                  <p class="text-white font-bold">Ver Currículo</p>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="text-2xl font-bold mb-4">📄 Currículo Digital Interativo</h3>
+            <p class="text-gray-300 mb-4">
+              Currículo profissional moderno com animações, seções interativas
+              e design responsivo para apresentação de habilidades.
+            </p>
+
+            <div class="bg-green-900 p-4 rounded mb-4">
+              <h4 class="font-bold mb-2">📚 O que você aprende:</h4>
+              <ul class="text-sm space-y-1">
+                <li>✅ Design de currículos digitais</li>
+                <li>✅ Animações CSS avançadas</li>
+                <li>✅ Estruturação de conteúdo profissional</li>
+                <li>✅ SEO para portfólio pessoal</li>
+                <li>✅ Integração com redes sociais</li>
+              </ul>
+            </div>
+
+            <div class="flex space-x-3">
+              <a
+                href="https://deivisan.github.io/Curriculo-Deivison/"
+                target="_blank"
+                class="flex-1 bg-indigo-500 hover:bg-indigo-600 py-3 rounded-lg font-bold text-center transition-all"
+              >
+                <i class="fas fa-eye mr-2"></i>Ver Demo
+              </a>
+              <a
+                href="https://github.com/deivisan/Curriculo-Deivison"
+                target="_blank"
+                class="flex-1 bg-gray-600 hover:bg-gray-700 py-3 rounded-lg font-bold text-center transition-all"
+              >
+                <i class="fab fa-github mr-2"></i>Código
+              </a>
+            </div>
+          </div>
+
+          <!-- Experimentos e Criações -->
+          <div class="service-card bg-gray-800 p-8 rounded-xl">
+            <div
+              class="project-showcase h-48 bg-gradient-to-r from-orange-500 to-red-600 flex items-center justify-center mb-6 relative"
+            >
+              <i class="fas fa-flask text-6xl text-white"></i>
+              <div class="project-overlay">
+                <div class="text-center">
+                  <i class="fas fa-external-link-alt text-3xl text-white mb-2"></i>
+                  <p class="text-white font-bold">Ver Experimentos</p>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="text-2xl font-bold mb-4">🧪 Experimentos e Prototipos</h3>
+            <p class="text-gray-300 mb-4">
+              Coleção de experimentos tecnológicos, protótipos e ideias inovadoras
+              incluindo IA para geração de ideias de negócio.
+            </p>
+
+            <div class="bg-green-900 p-4 rounded mb-4">
+              <h4 class="font-bold mb-2">📚 O que você encontra:</h4>
+              <ul class="text-sm space-y-1">
+                <li>✅ IA para empreendedorismo</li>
+                <li>✅ Prototipos web inovadores</li>
+                <li>✅ Experimentos com APIs</li>
+                <li>✅ Soluções criativas para problemas</li>
+                <li>✅ Código experimental avançado</li>
+              </ul>
+            </div>
+
+            <div class="flex space-x-3">
+              <a
+                href="https://deivisan.github.io/Experimentos/"
+                target="_blank"
+                class="flex-1 bg-orange-500 hover:bg-orange-600 py-3 rounded-lg font-bold text-center transition-all"
+              >
+                <i class="fas fa-eye mr-2"></i>Ver Experimentos
+              </a>
+              <a
+                href="https://github.com/deivisan/Experimentos"
+                target="_blank"
+                class="flex-1 bg-gray-600 hover:bg-gray-700 py-3 rounded-lg font-bold text-center transition-all"
+              >
+                <i class="fab fa-github mr-2"></i>Repositório
+              </a>
+            </div>
+          </div>
+
+          <!-- Site Institucional DeiviTech -->
+          <div class="service-card bg-gray-800 p-8 rounded-xl">
+            <div
+              class="project-showcase h-48 bg-gradient-to-r from-teal-500 to-emerald-600 flex items-center justify-center mb-6 relative"
+            >
+              <i class="fas fa-building text-6xl text-white"></i>
+              <div class="project-overlay">
+                <div class="text-center">
+                  <i class="fas fa-external-link-alt text-3xl text-white mb-2"></i>
+                  <p class="text-white font-bold">Ver Site</p>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="text-2xl font-bold mb-4">🏢 Site Institucional DeiviTech</h3>
+            <p class="text-gray-300 mb-4">
+              Site corporativo completo com seções de serviços, portfólio,
+              contato e integração com sistemas de gestão.
+            </p>
+
+            <div class="bg-green-900 p-4 rounded mb-4">
+              <h4 class="font-bold mb-2">📚 O que você aprende:</h4>
+              <ul class="text-sm space-y-1">
+                <li>✅ Desenvolvimento de sites institucionais</li>
+                <li>✅ Estruturação de conteúdo corporativo</li>
+                <li>✅ Formulários e validação</li>
+                <li>✅ SEO para empresas</li>
+                <li>✅ Design system consistente</li>
+              </ul>
+            </div>
+
+            <div class="flex space-x-3">
+              <a
+                href="https://deivisan.github.io/deivitech/"
+                target="_blank"
+                class="flex-1 bg-teal-500 hover:bg-teal-600 py-3 rounded-lg font-bold text-center transition-all"
+              >
+                <i class="fas fa-eye mr-2"></i>Ver Site
+              </a>
+              <a
+                href="https://github.com/deivisan/deivitech"
+                target="_blank"
+                class="flex-1 bg-gray-600 hover:bg-gray-700 py-3 rounded-lg font-bold text-center transition-all"
+              >
+                <i class="fab fa-github mr-2"></i>Código
+              </a>
+            </div>
+          </div>
+
+          <!-- Portfolio Pessoal -->
+          <div class="service-card bg-gray-800 p-8 rounded-xl">
+            <div
+              class="project-showcase h-48 bg-gradient-to-r from-pink-500 to-rose-600 flex items-center justify-center mb-6 relative"
+            >
+              <i class="fas fa-portrait text-6xl text-white"></i>
+              <div class="project-overlay">
+                <div class="text-center">
+                  <i class="fas fa-external-link-alt text-3xl text-white mb-2"></i>
+                  <p class="text-white font-bold">Ver Portfolio</p>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="text-2xl font-bold mb-4">🎨 Portfolio Pessoal</h3>
+            <p class="text-gray-300 mb-4">
+              Portfolio profissional com projetos em destaque, habilidades técnicas
+              e informações de contato para oportunidades de trabalho.
+            </p>
+
+            <div class="bg-green-900 p-4 rounded mb-4">
+              <h4 class="font-bold mb-2">📚 O que você aprende:</h4>
+              <ul class="text-sm space-y-1">
+                <li>✅ Design de portfolios pessoais</li>
+                <li>✅ Apresentação de projetos</li>
+                <li>✅ Showcase de habilidades</li>
+                <li>✅ Call-to-actions eficazes</li>
+                <li>✅ Personal branding online</li>
+              </ul>
+            </div>
+
+            <div class="flex space-x-3">
+              <a
+                href="https://deivisan.github.io/"
+                target="_blank"
+                class="flex-1 bg-pink-500 hover:bg-pink-600 py-3 rounded-lg font-bold text-center transition-all"
+              >
+                <i class="fas fa-eye mr-2"></i>Ver Portfolio
+              </a>
+              <a
+                href="https://github.com/deivisan/deivisan.github.io"
+                target="_blank"
+                class="flex-1 bg-gray-600 hover:bg-gray-700 py-3 rounded-lg font-bold text-center transition-all"
+              >
+                <i class="fab fa-github mr-2"></i>Código
+              </a>
+            </div>
+          </div>
+
+          <!-- Serviços Freelancer -->
+          <div class="service-card bg-gray-800 p-8 rounded-xl">
+            <div
+              class="project-showcase h-48 bg-gradient-to-r from-violet-500 to-purple-600 flex items-center justify-center mb-6 relative"
+            >
+              <i class="fas fa-briefcase text-6xl text-white"></i>
+              <div class="project-overlay">
+                <div class="text-center">
+                  <i class="fas fa-external-link-alt text-3xl text-white mb-2"></i>
+                  <p class="text-white font-bold">Ver Serviços</p>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="text-2xl font-bold mb-4">💼 Serviços Freelancer</h3>
+            <p class="text-gray-300 mb-4">
+              Plataforma de prestação de serviços com catálogo de soluções,
+              preços transparentes e sistema de contratação direta.
+            </p>
+
+            <div class="bg-green-900 p-4 rounded mb-4">
+              <h4 class="font-bold mb-2">📚 O que você aprende:</h4>
+              <ul class="text-sm space-y-1">
+                <li>✅ E-commerce para serviços</li>
+                <li>✅ Sistema de contratação online</li>
+                <li>✅ Precificação dinâmica</li>
+                <li>✅ Gestão de clientes</li>
+                <li>✅ Marketing para freelancers</li>
+              </ul>
+            </div>
+
+            <div class="flex space-x-3">
+              <a
+                href="https://deivisan.github.io/FreelancerDeiviTech/"
+                target="_blank"
+                class="flex-1 bg-violet-500 hover:bg-violet-600 py-3 rounded-lg font-bold text-center transition-all"
+              >
+                <i class="fas fa-eye mr-2"></i>Ver Serviços
+              </a>
+              <a
+                href="https://github.com/deivisan/FreelancerDeiviTech"
+                target="_blank"
+                class="flex-1 bg-gray-600 hover:bg-gray-700 py-3 rounded-lg font-bold text-center transition-all"
+              >
+                <i class="fab fa-github mr-2"></i>Código
+              </a>
+            </div>
+          </div>
+
+          <!-- Teste Assistente Voz -->
+          <div class="service-card bg-gray-800 p-8 rounded-xl">
+            <div
+              class="project-showcase h-48 bg-gradient-to-r from-cyan-500 to-blue-600 flex items-center justify-center mb-6 relative"
+            >
+              <i class="fas fa-microphone text-6xl text-white"></i>
+              <div class="project-overlay">
+                <div class="text-center">
+                  <i class="fas fa-external-link-alt text-3xl text-white mb-2"></i>
+                  <p class="text-white font-bold">Ver Demo</p>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="text-2xl font-bold mb-4">🎤 Assistente de Voz</h3>
+            <p class="text-gray-300 mb-4">
+              Protótipo de assistente virtual por voz com reconhecimento de fala,
+              síntese de voz e integração com comandos do sistema.
+            </p>
+
+            <div class="bg-green-900 p-4 rounded mb-4">
+              <h4 class="font-bold mb-2">📚 O que você aprende:</h4>
+              <ul class="text-sm space-y-1">
+                <li>✅ Reconhecimento de voz (Speech-to-Text)</li>
+                <li>✅ Síntese de voz (Text-to-Speech)</li>
+                <li>✅ Processamento de linguagem natural</li>
+                <li>✅ Integração com APIs de IA</li>
+                <li>✅ Automação por voz</li>
+              </ul>
+            </div>
+
+            <div class="flex space-x-3">
+              <a
+                href="https://deivisan.github.io/Teste-assitentevoz/"
+                target="_blank"
+                class="flex-1 bg-cyan-500 hover:bg-cyan-600 py-3 rounded-lg font-bold text-center transition-all"
+              >
+                <i class="fas fa-eye mr-2"></i>Ver Demo
+              </a>
+              <a
+                href="https://github.com/deivisan/Teste-assitentevoz"
+                target="_blank"
+                class="flex-1 bg-gray-600 hover:bg-gray-700 py-3 rounded-lg font-bold text-center transition-all"
+              >
+                <i class="fab fa-github mr-2"></i>Código
+              </a>
+            </div>
+          </div>
+
+          <!-- Perfil Profissional -->
+          <div class="service-card bg-gray-800 p-8 rounded-xl">
+            <div
+              class="project-showcase h-48 bg-gradient-to-r from-emerald-500 to-green-600 flex items-center justify-center mb-6 relative"
+            >
+              <i class="fas fa-id-card text-6xl text-white"></i>
+              <div class="project-overlay">
+                <div class="text-center">
+                  <i class="fas fa-external-link-alt text-3xl text-white mb-2"></i>
+                  <p class="text-white font-bold">Ver Perfil</p>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="text-2xl font-bold mb-4">👤 Perfil Profissional</h3>
+            <p class="text-gray-300 mb-4">
+              Página de perfil profissional com biografia, habilidades,
+              experiência e links para projetos e redes sociais.
+            </p>
+
+            <div class="bg-green-900 p-4 rounded mb-4">
+              <h4 class="font-bold mb-2">📚 O que você aprende:</h4>
+              <ul class="text-sm space-y-1">
+                <li>✅ Criação de perfis profissionais</li>
+                <li>✅ Apresentação de carreira</li>
+                <li>✅ Networking online</li>
+                <li>✅ Branding pessoal</li>
+                <li>✅ SEO para profissionais</li>
+              </ul>
+            </div>
+
+            <div class="flex space-x-3">
+              <a
+                href="https://deivisan.github.io/Deivisan/"
+                target="_blank"
+                class="flex-1 bg-emerald-500 hover:bg-emerald-600 py-3 rounded-lg font-bold text-center transition-all"
+              >
+                <i class="fas fa-eye mr-2"></i>Ver Perfil
+              </a>
+              <a
+                href="https://github.com/deivisan/Deivisan"
+                target="_blank"
+                class="flex-1 bg-gray-600 hover:bg-gray-700 py-3 rounded-lg font-bold text-center transition-all"
+              >
+                <i class="fab fa-github mr-2"></i>Código
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <p class="text-gray-300 mb-6">
+            Todos estes projetos estão disponíveis gratuitamente no meu GitHub.
+            Use, estude, modifique e contribua!
+          </p>
+          <a href="https://github.com/deivisan" target="_blank"
+             class="bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 px-8 py-4 rounded-lg font-bold text-white transition-all transform hover:scale-105">
+            <i class="fab fa-github mr-2"></i>Ver Todos os Repositórios
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-8 border-t border-gray-700">
+      <div class="container mx-auto px-6 text-center">
+        <div class="mb-6">
+          <h3 class="text-xl font-bold mb-4">Filantropia DeiviTech</h3>
+          <p class="text-gray-400 max-w-2xl mx-auto">
+            Acreditamos que o conhecimento deve ser livre e acessível a todos.
+            Cada projeto compartilhado é uma semente para um futuro melhor.
+          </p>
+        </div>
+
+        <div class="flex justify-center space-x-6 mb-6">
+          <a
+            href="https://github.com/deivisan"
+            target="_blank"
+            class="text-gray-400 hover:text-white"
+          >
+            <i class="fab fa-github text-xl"></i>
+          </a>
+          <a
+            href="https://linkedin.com/in/deivison-santana"
+            target="_blank"
+            class="text-gray-400 hover:text-white"
+          >
+            <i class="fab fa-linkedin text-xl"></i>
+          </a>
+          <a
+            href="https://wa.me/5575981231019"
+            target="_blank"
+            class="text-gray-400 hover:text-white"
+          >
+            <i class="fab fa-whatsapp text-xl"></i>
+          </a>
+        </div>
+
+        <div class="text-gray-400">
+          <p>
+            &copy; 2025 Filantropia DeiviTech. Conhecimento livre para todos.
+          </p>
+          <p class="mt-2">
+            Feito com ❤️ para a comunidade •
+            <a
+              href="https://deivisan.github.io/FreelancerDeiviTech/"
+              class="text-green-400 hover:text-green-300"
+              target="_blank"
+              >Serviços Comerciais</a
+            >
+          </p>
+          <div class="mt-4 flex justify-center">
+            <a href="https://wa.me/5575981231019?text=Olá! Gostaria de apoiar a Filantropia DeiviTech com uma doação voluntária 💙" target="_blank"
+               class="bg-green-600 hover:bg-green-700 px-6 py-2 rounded-lg font-bold text-sm transition-all flex items-center">
+              <i class="fas fa-heart mr-2"></i>Apoie o Projeto (Voluntário)
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

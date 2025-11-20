@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comunidade - Filantropia DeiviTech</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <style>
+      .hero-bg {
+        background: linear-gradient(
+          135deg,
+          #059669 0%,
+          #10b981 50%,
+          #34d399 100%
+        );
+      }
+      .community-card {
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+      }
+      .community-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.25);
+      }
+      .gradient-text {
+        background: linear-gradient(45deg, #10b981, #34d399, #6ee7b7);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .testimonial-card {
+        background: linear-gradient(45deg, rgba(16, 185, 129, 0.1), rgba(52, 211, 153, 0.1));
+        border: 1px solid rgba(16, 185, 129, 0.3);
+        border-radius: 12px;
+        padding: 1.5rem;
+        margin: 1rem 0;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="bg-gray-800 shadow-lg">
+      <div class="container mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+          <a href="index.html" class="text-2xl font-bold gradient-text">Filantropia DeiviTech</a>
+          <div class="space-x-6">
+            <a href="index.html" class="hover:text-green-400 transition-colors">Início</a>
+            <a href="projetos.html" class="hover:text-green-400 transition-colors">Projetos</a>
+            <a href="tutoriais.html" class="hover:text-green-400 transition-colors">Tutoriais</a>
+            <a href="parcerias.html" class="hover:text-green-400 transition-colors">Parcerias</a>
+            <a href="comunidade.html" class="text-green-400 border-b-2 border-green-400">Comunidade</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="hero-bg py-16 relative overflow-hidden">
+      <div class="absolute inset-0 bg-black opacity-20"></div>
+      <div class="container mx-auto px-6 relative z-10 text-center">
+        <h1 class="text-5xl font-bold mb-4">
+          <span class="text-white">Nossa</span>
+          <span class="gradient-text">Comunidade</span>
+        </h1>
+        <p class="text-2xl mb-8 opacity-90">
+          Conecte-se, aprenda e cresça junto com milhares de pessoas
+        </p>
+      </div>
+    </header>
+
+    <!-- Community Stats -->
+    <section class="py-16 bg-gray-800">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold mb-6">📊 Nossa Comunidade em Números</h2>
+          <p class="text-xl text-gray-300 max-w-4xl mx-auto">
+            Uma comunidade crescente de pessoas apaixonadas por tecnologia,
+            aprendizado e impacto social.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div class="text-center">
+            <div class="text-4xl font-bold text-green-400 mb-2">2.5K+</div>
+            <div class="text-lg font-semibold mb-2">Membros Ativos</div>
+            <div class="text-gray-300 text-sm">
+              Pessoas aprendendo e contribuindo diariamente
+            </div>
+          </div>
+
+          <div class="text-center">
+            <div class="text-4xl font-bold text-blue-400 mb-2">500+</div>
+            <div class="text-lg font-semibold mb-2">Projetos Criados</div>
+            <div class="text-gray-300 text-sm">
+              Trabalhos inspirados nos nossos tutoriais
+            </div>
+          </div>
+
+          <div class="text-center">
+            <div class="text-4xl font-bold text-purple-400 mb-2">50+</div>
+            <div class="text-lg font-semibold mb-2">Países Alcançados</div>
+            <div class="text-gray-300 text-sm">
+              Nossa comunidade é verdadeiramente global
+            </div>
+          </div>
+
+          <div class="text-center">
+            <div class="text-4xl font-bold text-pink-400 mb-2">24/7</div>
+            <div class="text-lg font-semibold mb-2">Suporte Ativo</div>
+            <div class="text-gray-300 text-sm">
+              Sempre disponíveis para ajudar
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Community Features -->
+    <section class="py-16">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold mb-6">🌟 O que oferecemos</h2>
+          <p class="text-xl text-gray-300 max-w-4xl mx-auto">
+            Uma comunidade completa com recursos para todos os níveis de conhecimento.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <!-- Learning Together -->
+          <div class="community-card bg-gray-800 p-8 rounded-xl">
+            <div class="text-center mb-6">
+              <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="fas fa-users text-2xl text-white"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-2">Aprendizado Coletivo</h3>
+            </div>
+
+            <p class="text-gray-300 mb-6 text-center">
+              Estude junto com outros alunos, tire dúvidas em tempo real
+              e aprenda através da experiência compartilhada.
+            </p>
+
+            <ul class="space-y-3 text-gray-300">
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-400 mr-3"></i>
+                Grupos de estudo semanais
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-400 mr-3"></i>
+                Sessões de pair programming
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-400 mr-3"></i>
+                Fóruns de discussão técnica
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-400 mr-3"></i>
+                Code reviews colaborativos
+              </li>
+            </ul>
+          </div>
+
+          <!-- Mentorship -->
+          <div class="community-card bg-gray-800 p-8 rounded-xl">
+            <div class="text-center mb-6">
+              <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="fas fa-user-graduate text-2xl text-white"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-2">Mentoria Personalizada</h3>
+            </div>
+
+            <p class="text-gray-300 mb-6 text-center">
+              Conecte-se com mentores experientes que vão guiar sua jornada
+              no desenvolvimento e carreira em tecnologia.
+            </p>
+
+            <ul class="space-y-3 text-gray-300">
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-400 mr-3"></i>
+                Mentores voluntários
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-400 mr-3"></i>
+                Orientação de carreira
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-400 mr-3"></i>
+                Revisão de projetos
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-400 mr-3"></i>
+                Preparação para entrevistas
+              </li>
+            </ul>
+          </div>
+
+          <!-- Projects & Collaboration -->
+          <div class="community-card bg-gray-800 p-8 rounded-xl">
+            <div class="text-center mb-6">
+              <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="fas fa-project-diagram text-2xl text-white"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-2">Projetos Colaborativos</h3>
+            </div>
+
+            <p class="text-gray-300 mb-6 text-center">
+              Trabalhe em projetos reais com outros membros da comunidade,
+              construindo portfólio e experiência prática.
+            </p>
+
+            <ul class="space-y-3 text-gray-300">
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-400 mr-3"></i>
+                Hackathons mensais
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-400 mr-3"></i>
+                Projetos open source
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-400 mr-3"></i>
+                Desafios de codificação
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-400 mr-3"></i>
+                Portfólio compartilhado
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-gray-800">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold mb-6">💬 O que dizem da nossa comunidade</h2>
+          <p class="text-xl text-gray-300 max-w-4xl mx-auto">
+            Histórias reais de pessoas que transformaram suas vidas através da nossa comunidade.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="testimonial-card">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mr-4">
+                <i class="fas fa-user text-white"></i>
+              </div>
+              <div>
+                <h4 class="font-bold">Maria Silva</h4>
+                <p class="text-sm text-gray-400">Desenvolvedora Frontend</p>
+              </div>
+            </div>
+            <p class="text-gray-300 italic">
+              "A comunidade me deu não só conhecimento técnico, mas também confiança para
+              seguir carreira na tecnologia. Os mentores são incríveis!"
+            </p>
+            <div class="flex text-yellow-400 mt-3">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mr-4">
+                <i class="fas fa-user text-white"></i>
+              </div>
+              <div>
+                <h4 class="font-bold">João Santos</h4>
+                <p class="text-sm text-gray-400">Analista de Dados</p>
+              </div>
+            </div>
+            <p class="text-gray-300 italic">
+              "Consegui meu primeiro emprego em tech graças aos projetos colaborativos.
+              A comunidade é como uma família que te apoia incondicionalmente."
+            </p>
+            <div class="flex text-yellow-400 mt-3">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mr-4">
+                <i class="fas fa-user text-white"></i>
+              </div>
+              <div>
+                <h4 class="font-bold">Ana Costa</h4>
+                <p class="text-sm text-gray-400">UX Designer</p>
+              </div>
+            </div>
+            <p class="text-gray-300 italic">
+              "Os grupos de estudo me ajudaram a entender conceitos complexos de forma prática.
+              Nunca me senti sozinha na minha jornada de aprendizado."
+            </p>
+            <div class="flex text-yellow-400 mt-3">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Join -->
+    <section class="py-16">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold mb-6">🚀 Junte-se à nossa comunidade!</h2>
+          <p class="text-xl text-gray-300 max-w-4xl mx-auto">
+            Seja parte de uma comunidade que valoriza o aprendizado, a colaboração
+            e o crescimento mútuo. Aqui, todos são bem-vindos!
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <!-- Contact Form -->
+          <div class="bg-gray-800 p-8 rounded-xl">
+            <h3 class="text-2xl font-bold mb-6">📬 Entre em Contato</h3>
+
+            <form id="contact-form" class="space-y-6">
+              <div>
+                <label class="block text-gray-300 mb-2">Nome</label>
+                <input
+                  type="text"
+                  id="name"
+                  class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-green-400"
+                  placeholder="Seu nome completo"
+                  required
+                />
+              </div>
+
+              <div>
+                <label class="block text-gray-300 mb-2">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-green-400"
+                  placeholder="seu@email.com"
+                  required
+                />
+              </div>
+
+              <div>
+                <label class="block text-gray-300 mb-2">Assunto</label>
+                <select
+                  id="subject"
+                  class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-green-400"
+                  required
+                >
+                  <option value="">Selecione um assunto</option>
+                  <option value="mentoria">Solicitar Mentoria</option>
+                  <option value="projeto">Colaboração em Projeto</option>
+                  <option value="duvida">Tirar Dúvida Técnica</option>
+                  <option value="parceria">Proposta de Parceria</option>
+                  <option value="outro">Outro</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-gray-300 mb-2">Mensagem</label>
+                <textarea
+                  id="message"
+                  rows="5"
+                  class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-green-400"
+                  placeholder="Conte-nos como podemos ajudar..."
+                  required
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="w-full bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 py-3 rounded-lg font-bold text-white transition-all transform hover:scale-105"
+              >
+                <i class="fas fa-paper-plane mr-2"></i>Enviar Mensagem
+              </button>
+            </form>
+          </div>
+
+          <!-- Community Channels -->
+          <div class="space-y-8">
+            <div class="bg-gray-800 p-8 rounded-xl">
+              <h3 class="text-2xl font-bold mb-6">🌐 Canais da Comunidade</h3>
+
+              <div class="space-y-4">
+                <a
+                  href="https://wa.me/5575981231019"
+                  target="_blank"
+                  class="flex items-center p-4 bg-green-600 hover:bg-green-700 rounded-lg transition-all"
+                >
+                  <i class="fab fa-whatsapp text-2xl mr-4"></i>
+                  <div>
+                    <h4 class="font-bold">WhatsApp Community</h4>
+                    <p class="text-sm opacity-90">Grupo principal de discussão</p>
+                  </div>
+                </a>
+
+                <a
+                  href="https://github.com/deivisan"
+                  target="_blank"
+                  class="flex items-center p-4 bg-gray-600 hover:bg-gray-700 rounded-lg transition-all"
+                >
+                  <i class="fab fa-github text-2xl mr-4"></i>
+                  <div>
+                    <h4 class="font-bold">GitHub</h4>
+                    <p class="text-sm opacity-90">Código e contribuições</p>
+                  </div>
+                </a>
+
+                <a
+                  href="https://linkedin.com/in/deivison-santana"
+                  target="_blank"
+                  class="flex items-center p-4 bg-blue-600 hover:bg-blue-700 rounded-lg transition-all"
+                >
+                  <i class="fab fa-linkedin text-2xl mr-4"></i>
+                  <div>
+                    <h4 class="font-bold">LinkedIn</h4>
+                    <p class="text-sm opacity-90">Networking profissional</p>
+                  </div>
+                </a>
+
+                <a
+                  href="mailto:deivison.santana@example.com"
+                  class="flex items-center p-4 bg-red-600 hover:bg-red-700 rounded-lg transition-all"
+                >
+                  <i class="fas fa-envelope text-2xl mr-4"></i>
+                  <div>
+                    <h4 class="font-bold">Email Direto</h4>
+                    <p class="text-sm opacity-90">Contato pessoal</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Quick Stats -->
+            <div class="bg-gradient-to-r from-green-600 to-blue-600 p-8 rounded-xl text-center">
+              <h3 class="text-2xl font-bold mb-4">⚡ Resposta Rápida</h3>
+              <p class="text-lg mb-4">
+                Respondemos todas as mensagens em até 24 horas!
+              </p>
+              <div class="flex justify-center space-x-4 text-2xl">
+                <i class="fas fa-clock text-white"></i>
+                <span class="text-white font-bold">24h</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-8 border-t border-gray-700">
+      <div class="container mx-auto px-6 text-center">
+        <div class="mb-6">
+          <h3 class="text-xl font-bold mb-4">Filantropia DeiviTech</h3>
+          <p class="text-gray-400 max-w-2xl mx-auto">
+            Nossa comunidade é o coração do nosso projeto. Juntos, construímos
+            um futuro mais inclusivo e acessível para todos na tecnologia.
+          </p>
+        </div>
+
+        <div class="flex justify-center space-x-6 mb-6">
+          <a
+            href="https://github.com/deivisan"
+            target="_blank"
+            class="text-gray-400 hover:text-white"
+          >
+            <i class="fab fa-github text-xl"></i>
+          </a>
+          <a
+            href="https://linkedin.com/in/deivison-santana"
+            target="_blank"
+            class="text-gray-400 hover:text-white"
+          >
+            <i class="fab fa-linkedin text-xl"></i>
+          </a>
+          <a
+            href="https://wa.me/5575981231019"
+            target="_blank"
+            class="text-gray-400 hover:text-white"
+          >
+            <i class="fab fa-whatsapp text-xl"></i>
+          </a>
+        </div>
+
+        <div class="text-gray-400">
+          <p>
+            &copy; 2025 Filantropia DeiviTech. Conhecimento livre para todos.
+          </p>
+          <p class="mt-2">
+            Feito com ❤️ para a comunidade •
+            <a
+              href="https://deivisan.github.io/FreelancerDeiviTech/"
+              class="text-green-400 hover:text-green-300"
+              target="_blank"
+              >Serviços Comerciais</a
+            >
+          </p>
+          <div class="mt-4 flex justify-center">
+            <a href="https://wa.me/5575981231019?text=Olá! Gostaria de apoiar a Filantropia DeiviTech com uma doação voluntária 💙" target="_blank"
+               class="bg-green-600 hover:bg-green-700 px-6 py-2 rounded-lg font-bold text-sm transition-all flex items-center">
+              <i class="fas fa-heart mr-2"></i>Apoie o Projeto (Voluntário)
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Form validation and submission
+      document.getElementById('contact-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const subject = document.getElementById('subject').value;
+        const message = document.getElementById('message').value;
+
+        // Basic validation
+        if (!name || !email || !subject || !message) {
+          alert('Por favor, preencha todos os campos.');
+          return;
+        }
+
+        if (!email.includes('@')) {
+          alert('Por favor, insira um email válido.');
+          return;
+        }
+
+        // Simulate form submission
+        alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
+
+        // Reset form
+        this.reset();
+      });
+    </script>
+  </body>
+</html>
