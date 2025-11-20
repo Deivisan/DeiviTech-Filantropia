@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificado - Filantropia DeiviTech</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .certificate-bg {
+            background: linear-gradient(135deg, #059669 0%, #10b981 50%, #34d399 100%);
+        }
+        .certificate-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            position: relative;
+            overflow: hidden;
+        }
+        .certificate-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 10px;
+            background: linear-gradient(90deg, #059669, #10b981, #34d399);
+        }
+        .signature-line {
+            border-bottom: 2px solid #10b981;
+            width: 200px;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <div class="container mx-auto px-6 py-12">
+        <div class="max-w-4xl mx-auto">
+            <!-- Header -->
+            <div class="text-center mb-8">
+                <h1 class="text-4xl font-bold text-gray-800 mb-4">
+                    🎓 Certificado de Conclusão
+                </h1>
+                <p class="text-gray-600">
+                    Filantropia DeiviTech - Conhecimento que Transforma Vidas
+                </p>
+            </div>
+
+            <!-- Certificate -->
+            <div class="certificate-card p-12 mb-8">
+                <div class="text-center mb-8">
+                    <div class="certificate-bg text-white p-6 rounded-lg mb-6">
+                        <i class="fas fa-graduation-cap text-6xl mb-4"></i>
+                        <h2 class="text-3xl font-bold">CERTIFICADO</h2>
+                        <p class="text-xl opacity-90">DE CONCLUSÃO DE CURSO</p>
+                    </div>
+                </div>
+
+                <div class="text-center mb-8">
+                    <p class="text-lg text-gray-700 mb-4">Certificamos que</p>
+                    <h3 class="text-3xl font-bold text-gray-800 mb-4" id="student-name">[Seu Nome]</h3>
+                    <p class="text-lg text-gray-700 mb-6">
+                        concluiu com êxito o curso/tutoriais de
+                    </p>
+                    <h4 class="text-2xl font-bold text-green-600 mb-6" id="course-name">
+                        Desenvolvimento Web Completo
+                    </h4>
+                    <p class="text-gray-600 mb-8">
+                        Demonstrando competência em HTML5, CSS3, JavaScript e desenvolvimento de aplicações web modernas.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                    <div class="text-center">
+                        <p class="text-sm text-gray-500 mb-2">Data de Conclusão</p>
+                        <p class="font-bold text-lg" id="completion-date">
+                            <?php echo date('d/m/Y'); ?>
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-sm text-gray-500 mb-2">Carga Horária</p>
+                        <p class="font-bold text-lg">40 horas</p>
+                    </div>
+                </div>
+
+                <div class="signature-line"></div>
+                <div class="text-center">
+                    <p class="text-sm text-gray-500 mb-2">Deivison Santana</p>
+                    <p class="text-sm text-gray-500">Fundador - Filantropia DeiviTech</p>
+                </div>
+            </div>
+
+            <!-- Actions -->
+            <div class="text-center space-y-4">
+                <button onclick="generatePDF()" class="bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-lg font-bold transition-all">
+                    <i class="fas fa-download mr-2"></i>Baixar Certificado (PDF)
+                </button>
+
+                <div class="flex justify-center space-x-4">
+                    <button onclick="shareCertificate()" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-lg font-bold transition-all">
+                        <i class="fas fa-share mr-2"></i>Compartilhar
+                    </button>
+                    <a href="index.html" class="bg-gray-500 hover:bg-gray-600 text-white px-6 py-2 rounded-lg font-bold transition-all">
+                        <i class="fas fa-home mr-2"></i>Voltar ao Site
+                    </a>
+                </div>
+            </div>
+
+            <!-- Info -->
+            <div class="mt-12 bg-blue-50 p-6 rounded-lg">
+                <h3 class="text-xl font-bold text-blue-800 mb-4">
+                    <i class="fas fa-info-circle mr-2"></i>Como Obter seu Certificado
+                </h3>
+                <ul class="text-blue-700 space-y-2">
+                    <li>✅ Complete todos os tutoriais da seção escolhida</li>
+                    <li>✅ Execute os projetos práticos</li>
+                    <li>✅ Entre em contato via WhatsApp para validação</li>
+                    <li>✅ Receba seu certificado personalizado</li>
+                </ul>
+                <div class="mt-4">
+                    <a href="https://wa.me/5575981231019?text=Olá! Completei os tutoriais e gostaria de meu certificado 🎓" target="_blank"
+                       class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-lg font-bold transition-all inline-block">
+                        <i class="fab fa-whatsapp mr-2"></i>Solicitar Certificado
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script>
+        // Get URL parameters for personalization
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get('name') || '[Seu Nome]';
+        const course = urlParams.get('course') || 'Desenvolvimento Web Completo';
+
+        document.getElementById('student-name').textContent = decodeURIComponent(name);
+        document.getElementById('course-name').textContent = decodeURIComponent(course);
+
+        function generatePDF() {
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF();
+
+            // Certificate content
+            doc.setFontSize(24);
+            doc.text('CERTIFICADO DE CONCLUSÃO', 105, 30, { align: 'center' });
+
+            doc.setFontSize(16);
+            doc.text('Filantropia DeiviTech', 105, 50, { align: 'center' });
+
+            doc.setFontSize(14);
+            doc.text('Certificamos que', 105, 80, { align: 'center' });
+
+            doc.setFontSize(18);
+            doc.text(decodeURIComponent(name), 105, 100, { align: 'center' });
+
+            doc.setFontSize(14);
+            doc.text('concluiu com êxito o curso de', 105, 120, { align: 'center' });
+            doc.text(decodeURIComponent(course), 105, 135, { align: 'center' });
+
+            doc.setFontSize(12);
+            doc.text('Data: ' + new Date().toLocaleDateString('pt-BR'), 105, 160, { align: 'center' });
+
+            // Save the PDF
+            doc.save('certificado-filantropia-deivitech.pdf');
+        }
+
+        function shareCertificate() {
+            const url = window.location.href;
+            const text = `Acabei de concluir um curso na Filantropia DeiviTech! 🎓 ${url}`;
+
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Certificado Filantropia DeiviTech',
+                    text: text,
+                    url: url
+                });
+            } else {
+                navigator.clipboard.writeText(text).then(() => {
+                    alert('Link copiado para compartilhar!');
+                });
+            }
+        }
+    </script>
+</body>
+</html>
